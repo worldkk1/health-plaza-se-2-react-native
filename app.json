@@ -3,11 +3,12 @@
     "name": "health-plaza-se-2-react-native",
     "slug": "health-plaza-se-2-react-native",
     "version": "1.0.0",
+    "scheme": "kk-scheme",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./public/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./public/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,12 +17,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./public/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./public/favicon.png",
+      "bundler": "metro",
+      "build": {
+        "babel": {
+          "include": [ "@ui-kitten/components" ]
+        }
+      }
     }
   }
 }
