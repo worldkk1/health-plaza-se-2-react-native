@@ -1,10 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-interface Leaderboard {
-  score: number;
-  playerName: string;
-  playedAt: Date;
-}
+import { Leaderboard } from '../interfaces';
 
 export const getLeaderboard = async () => {
   try {
@@ -34,4 +30,8 @@ export const storeScoreToLeaderboard = async (score: number, playerName: string)
   } catch (error) {
     console.error(error);
   }
+}
+
+export const clearLeaderboard = async () => {
+  await AsyncStorage.clear();
 }

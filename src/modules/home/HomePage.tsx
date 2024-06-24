@@ -17,7 +17,7 @@ const HomePage = () => {
         <Link href="/quiz" asChild>
           <Button>Start</Button>
         </Link>
-        <Link href="/Leaderboard" asChild>
+        <Link href="/leaderboard" asChild>
           <Button>Leaderboard</Button>
         </Link>
       </View>
