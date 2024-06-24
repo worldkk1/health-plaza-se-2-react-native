@@ -7,5 +7,5 @@ import { Quiz } from '../interfaces';
 export const fetchQuiz = async (): Promise<Quiz[]> => {
   const randomQuiz: Quiz[] = shuffleArray(QuizData);
 
-  return await Promise.resolve(randomQuiz.slice(0, 2));
+  return await Promise.resolve(randomQuiz);
 }
