@@ -12,7 +12,7 @@ const Question = (props: Props) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 36,
+    fontSize: 24,
   },
 });
 
